@@ -19,6 +19,8 @@ CREATE TABLE Buyer_Address (
     ID int IDENTITY(1,1) PRIMARY KEY,
 Address varchar(255) NOT NULL,
 Status varchar(255) NOT NULL,
+Buyer_id int NOT NULL,
+FOREIGN KEY (Buyer_id) REFERENCES Buyer(ID)
 );
 
 CREATE TABLE Buyer_Order (
