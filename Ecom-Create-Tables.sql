@@ -12,7 +12,7 @@ CREATE TABLE Buyer (
     ID int IDENTITY(1,1) PRIMARY KEY,
     [Name] varchar(255) NOT NULL,
     Email varchar(255) NOT NULL,
-	PhoneNo int NOT NULL
+	PhoneNo BIGINT NOT NULL
 );
 
 CREATE TABLE Buyer_Address (
